@@ -1,0 +1,27 @@
+{
+  "name": "electron_xml_phonebook",
+  "version": "1.0.0",
+  "description": "phoneboox xml generator",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^8.2.3"
+  },
+  "devDependencies": {
+    "progressbar.js": "^1.1.0",
+    "timerjs": "0.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elihe999/electron_xml_phonebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elihe999/electron_xml_phonebook/issues"
+  },
+  "homepage": "https://github.com/elihe999/electron_xml_phonebook#readme"
+}
