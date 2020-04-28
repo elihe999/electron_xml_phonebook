@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Layout, LocaleProvider } from 'antd';
+import 'antd/dist/antd.less';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+// import Header from './components/Header';
+import Nav from './components/Nav';
+import { MainRouter } from "./router";
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+
+  render() {
+    return (
+      <LocaleProvider locale={zhCN}>
+        <Layout className="container">
+          <Layout>
+            <Nav />
+            <Layout className="bodyContainer"  style={{ padding: '0 24px 24px' }}>
+             <MainRouter />
+            </Layout>
+          </Layout>
+        </Layout>
+      </LocaleProvider>
+    );
+  }
 }
-
-export default App;

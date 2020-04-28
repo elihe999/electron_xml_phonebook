@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MainRouter } from "./router";
+import createHistory from 'history/createHashHistory';
+
+import { Router } from 'react-router-dom';
 // import './index.css';
-// import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+const history = createHistory();
+
 ReactDOM.render(
-  <MainRouter/>,
+  <Router history={history}>
+    <App />
+  </Router>,
   document.getElementById('root')
 );
 

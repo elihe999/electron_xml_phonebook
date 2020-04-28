@@ -1,0 +1,34 @@
+.itemlist {
+    float: none; 
+    clear: both;
+    width: 30%; 
+    margin: 10% auto;
+    background: #eee;
+}
+  
+.itemlist ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.itemlist li{
+	float: none; 
+    width: 100%;
+}
+
+.itemlist li a{
+    display: block; 
+    width: 100%; 
+    padding: 20px; 
+    border-left: 5px solid; 
+    position: relative; 
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+}
+
+.itemlist li a:hover{ border-bottom: 0px; color: #fff;}
