@@ -7,7 +7,7 @@ import Nav from './components/Nav';
 
 import { MainRouter } from "./router/router";
 import {Provider} from 'mobx-react';
-import rootStore from './mobx/rootStore';
+import rootStore from './mobx';
 import DevTools from 'mobx-react-devtools';
 import './index.css';
 
