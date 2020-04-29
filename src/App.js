@@ -2,25 +2,31 @@ import React, { Component } from 'react';
 import { Layout, LocaleProvider } from 'antd';
 import 'antd/dist/antd.less';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
-// import Header from './components/Header';
+
 import Nav from './components/Nav';
-import { MainRouter } from "./router";
+
+import { MainRouter } from "./router/router";
+import {Provider} from 'mobx-react';
+import rootStore from './mobx/rootStore';
+import DevTools from 'mobx-react-devtools';
 import './index.css';
 
 export default class App extends Component {
 
   render() {
     return (
-      <LocaleProvider locale={zhCN}>
-        <Layout className="container">
-          <Layout>
-            <Nav />
-            <Layout className="bodyContainer"  style={{ padding: '0 24px 24px' }}>
-             <MainRouter />
+      <Provider rootStore={rootStore}>
+        <LocaleProvider locale={zhCN}>
+          <Layout className="container">
+            <Layout>
+              <Nav />
+              <Layout className="bodyContainer"  style={{ padding: '0 24px 24px' }}>
+              <MainRouter />
+              </Layout>
             </Layout>
           </Layout>
-        </Layout>
-      </LocaleProvider>
+        </LocaleProvider>
+      </Provider>
     );
   }
 }

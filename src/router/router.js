@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Home from "./page/Home";
-import Phonebook from "./page/Phonebook";
-import Setting from "./page/Setting";
+import Home from "../page/Home";
+import Phonebook from "../page/Phonebook";
+import Setting from "../page/Setting";
 
 export class MainRouter extends React.Component {
     render() {

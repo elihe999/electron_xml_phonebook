@@ -4,7 +4,18 @@ import {
   Col,
   List,
   Button,
+  Card,
+  Form,
+  FormItem,
+  formItemLayout,
+  Input,
+  Radio,
+  RadioGroup,
+  Tooltip,
+  Checkbox
 } from 'antd';
+
+import Tree from './Tree';
 
 // import {
 //   MailOutlined,
@@ -29,7 +40,6 @@ class Phonebook extends React.Component {
     ];
   };
 
-
   // const xml = builder.create('root')
   //   .ele('xmlbuilder')
   //   .ele('repo', {'type': 'git'}, 'git://github.com/oozcitak/xmlbuilder-js.git')
@@ -39,21 +49,20 @@ class Phonebook extends React.Component {
       <div>
         <Header />
         <Row>
-          <Col span={10} >
-            <nav class="itemlist">
-              <ul>
-                <li><a >Home</a></li>
-                <li><a >About</a></li>
-                <li><a >Work</a></li>
-                <li><a >Contact</a></li>
-              </ul>
-            </nav>
-          </Col>
           <Col span={6} >
-          
+          <List>
+            <Tree />
+          </List>
           </Col>
           <Col span={8} >
-          
+            <Card title="Card title" extra={<a href="#">More</a>} style={{ width: 300 }}>
+              <p>Card content</p>
+              <p>Card content</p>
+              <p>Card content</p>
+            </Card>
+          </Col>
+          <Col span={10} >
+            
           </Col>
         </Row>
       </div>

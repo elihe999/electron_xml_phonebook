@@ -1,8 +1,7 @@
 .itemlist {
     float: none; 
     clear: both;
-    width: 30%; 
-    margin: 10% auto;
+    width: 90%; 
     background: #eee;
 }
   
@@ -31,4 +30,4 @@
     -webkit-box-sizing: border-box; 
 }
 
-.itemlist li a:hover{ border-bottom: 0px; color: #fff;}
+.itemlist li a:hover{ border-bottom: 0px; color: blue; }
