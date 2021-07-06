@@ -4,7 +4,7 @@
   "description": "phoneboox xml generator",
   "main": "main.js",
   "dependencies": {
-    "electron": "^8.2.3"
+    "electron": "^9.4.0"
   },
   "devDependencies": {
     "progressbar.js": "^1.1.0",
